@@ -9,5 +9,5 @@ sources:
       - name: stg_orders
       - name: stg_payments
       - name: stg_products
-
+      - name: 'products_category'
 
