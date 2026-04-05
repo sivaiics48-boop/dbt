@@ -10,4 +10,6 @@ sources:
       - name: stg_payments
       - name: stg_products
       - name: 'products_category'
+      - name: 'stg_customers_snap'
+
 
