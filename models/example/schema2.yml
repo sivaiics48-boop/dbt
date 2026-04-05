@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+  - name: shared1
+    database: "{{('dbt_db')}}"
+    schema: staging_layer 
+    tables:
+      - name: stg_orders_test
+        columns:
+          - name: id
+            tests:
+              - unique
+              - not_null
+    
+      - name: stg_customerdata_test
+
+      - name: stg_payments_test
+
