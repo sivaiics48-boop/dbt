@@ -1,21 +1,13 @@
-
 version: 2
+sources:
+  - name: shared
+    database: "{{('dbt_db')}}"
+    schema: staging_layer
 
-models:
-    - name: my_first_dbt_model
-      description: "A starter dbt model"
-      columns:
-          - name: id
-            description: "The primary key for this table"
-            tests:
-                - unique
-                - not_null
+    tables:
+      - name: stg_customers
+      - name: stg_orders
+      - name: stg_payments
+      - name: stg_products
 
-    - name: my_second_dbt_model
-      description: "A starter dbt model"
-      columns:
-          - name: id
-            description: "The primary key for this table"
-            tests:
-                - unique
-                - not_null
+
